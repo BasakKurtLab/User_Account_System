@@ -1,0 +1,21 @@
+h1
+{
+    text-align: center;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 0 auto;
+}
+form>*
+{
+    margin-bottom: 10px;
+}
+
+input
+{
+    padding: 4px 8px;
+}

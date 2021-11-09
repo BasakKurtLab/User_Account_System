@@ -19,7 +19,7 @@
     
     if($result->num_rows == 0)
     {
-        header("Location: /loginPage.php?emailFalsch=1");
+        header("Location: loginPage.php?emailFalsch=1");
         exit();
     }
     else
@@ -31,12 +31,12 @@
             // ERFOLGREICH EINGELOGGT. Umleitung zur Startseite
             setcookie("eingeloggt", "1");
             setcookie("name", $account["vorname"]);
-            header("Location: /index.php");
+            header("Location: index.php");
         }
         else
         {
             // PASSWORT IST FALSCH
-            header("Location: /loginPage.php?pwFalsch=1");
+            header("Location: loginPage.php?pwFalsch=1");
         }
     }
     

@@ -44,7 +44,7 @@
 
     if($result->num_rows > 0)
     {
-        header("Location: /registerPage.php?emailFehler=1");
+        header("Location: registerPage.php?emailFehler=1");
         exit();
     }
 
@@ -60,7 +60,7 @@
     {
         setcookie("eingeloggt", "1");
         setcookie("name", $vorname);
-        header("Location: /index.php");
+        header("Location: index.php");
     }
     else
     {

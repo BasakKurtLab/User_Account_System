@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My User Account System</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Anmelden</h1>
+<div class="formContainer">
+    <h1>Member Login</h1>
+    <img src="user.png">
 
     <form method="POST" action="login.php">
         <input type="email" placeholder="E-Mail-Adresse" name="email" required>
@@ -18,13 +23,14 @@
     <?php
         if(isset($_GET["pwFalsch"]) && $_GET["pwFalsch"] == "1")
         {
-            echo("<div>Passwort ist falsch</div>");
+            echo("<span >Passwort is false</span >");
         }
 
         if(isset($_GET["emailFalsch"]) && $_GET["emailFalsch"] == "1")
         {
-            echo("<div>E-Mail ist falsch</div>");
+            echo("<span >E-Mail is false</span>");
         }
     ?>
+    </div>
 </body>
 </html>

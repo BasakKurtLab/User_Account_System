@@ -58,9 +58,8 @@
 
     if($verbindung->query($anfrage) === true)
     {
-        setcookie("eingeloggt", "1");
-        setcookie("name", $vorname);
-        header("Location: index.php");
+        
+        header("Location: loginPage.php");
     }
     else
     {
